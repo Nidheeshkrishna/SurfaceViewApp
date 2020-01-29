@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="120dp"
+    card_view:contentPadding="5dp"
+    card_view:cardElevation="2dp"
+    android:background="@color/red"
+    card_view:cardCornerRadius="10dp">
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_close_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+        android:foreground="@drawable/ic_close_black_24dp"
+        android:tint="@color/Border_color"
+        card_view:backgroundTint="@color/close_btn_color"
+        card_view:fabCustomSize="@dimen/fbutton_default_padding_right"
+        card_view:fabSize="auto" />
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_gravity="center"
+        android:textColor="@color/close_btn_color"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="1">
+
+    </TextView>
+
+
+</androidx.cardview.widget.CardView>

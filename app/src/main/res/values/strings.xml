@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SurfaceViewApp</string>
+    <string name="type">Type</string>
+    <string name="submit">submit</string>
+</resources>

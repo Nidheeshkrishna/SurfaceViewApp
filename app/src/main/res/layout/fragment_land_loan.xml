@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Type">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/border">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+  <SurfaceView
+
+      android:id="@+id/preview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" >
+
+  </SurfaceView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatingActionButton"
+        android:layout_gravity="center"
+        android:onClick="onSnapClick"
+        android:src="@android:drawable/ic_menu_camera"
+        app:backgroundTint="@color/red"
+        android:layout_marginTop="10dp"
+        tools:ignore="ObsoleteLayoutParam"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:gravity="center_vertical"
+      >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_image"
+        android:scrollbars="horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="50dp"
+      android:layout_marginLeft="100dp"
+      android:layout_marginRight="100dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      >
+      <Button
+          android:id="@+id/btn_submit"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+          android:minWidth="210dp"
+          android:minHeight="40dp"
+          android:background="@drawable/buttonbackground"
+          android:text="submit"
+          android:textColor="@android:color/white" />
+  </LinearLayout>
+</LinearLayout>

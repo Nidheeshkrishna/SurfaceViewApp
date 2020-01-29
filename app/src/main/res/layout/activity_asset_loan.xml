@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AssetLoanActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/Border_color"
+            android:text="@string/type">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <SurfaceView
+            android:id="@+id/preview_asset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </SurfaceView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/floatingActionButton"
+        android:layout_gravity="center"
+        android:onClick="onSnapClick"
+        android:src="@android:drawable/ic_menu_camera"
+        app:backgroundTint="@color/red"
+        android:layout_marginTop="10dp"
+        tools:ignore="ObsoleteLayoutParam"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center"
+            android:id="@+id/recycler_image"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:scrollbars="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        >
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="210dp"
+            android:minHeight="40dp"
+            android:background="@drawable/buttonbackground"
+            android:text="@string/submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
